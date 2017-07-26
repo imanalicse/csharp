@@ -11,9 +11,26 @@ class Program
         empList.Add(new Employee() { ID = 103, Name = "John", Salary = 6000, Experience = 6 });
         empList.Add(new Employee() { ID = 104, Name = "Toddy", Salary = 3000, Experience = 3 });
 
-        Employee.PromoteEmployee(empList);
+        //IsPromotable isPromotable = new IsPromotable(Promote);
+
+        //Employee.PromoteEmployee(empList, isPromotable);
+        Employee.PromoteEmployee(empList, emp=>emp.Experience >= 5);
     }
+
+    //public static bool Promote(Employee emp)
+    //{
+    //    if (emp.Experience >= 5)
+    //    {
+    //        return true;
+    //    }
+    //    else
+    //    {
+    //        return false;
+    //    }
+    //}
 }
+
+delegate bool IsPromotable(Employee empl);
 
 class Employee
 {
@@ -22,11 +39,11 @@ class Employee
     public int Salary { get; set; }
     public int Experience { get; set; }
 
-    public static void PromoteEmployee(List<Employee> empployeeList)
+    public static void PromoteEmployee(List<Employee> empployeeList, IsPromotable IsEligibleToPromote)
     {
         foreach(Employee employee in empployeeList)
         {
-            if(employee.Experience >= 5)
+            if(IsEligibleToPromote(employee))
             {
                 Console.WriteLine(employee.Name + " promoted");
             }
