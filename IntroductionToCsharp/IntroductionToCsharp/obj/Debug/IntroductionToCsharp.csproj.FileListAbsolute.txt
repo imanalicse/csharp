@@ -10,5 +10,3 @@ C:\csharp\csharphub\IntroductionToCsharp\IntroductionToCsharp\obj\Debug\Introduc
 C:\csharp\csharphub\IntroductionToCsharp\IntroductionToCsharp\bin\Debug\IntroductionToCsharp.exe
 C:\csharp\csharphub\IntroductionToCsharp\IntroductionToCsharp\bin\Debug\IntroductionToCsharp.pdb
 C:\csharp\csharphub\IntroductionToCsharp\IntroductionToCsharp\obj\Debug\IntroductionToCsharp.csprojResolveAssemblyReference.cache
-C:\csharp\csharphub\IntroductionToCsharp\IntroductionToCsharp\bin\Debug\IntroductionToCsharp.exe.CodeAnalysisLog.xml
-C:\csharp\csharphub\IntroductionToCsharp\IntroductionToCsharp\bin\Debug\IntroductionToCsharp.exe.lastcodeanalysissucceeded
