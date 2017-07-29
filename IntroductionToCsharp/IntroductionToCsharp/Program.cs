@@ -1,20 +1,12 @@
 ﻿using System;
-using System.IO;
 
-public class Program
+namespace IntroductionToCsharp
 {
-    static void Main()
+    class Program
     {
-        try {
-            StreamReader streamReader = new StreamReader(@"C:\csharp\csharphub\TestingFiles\data.txt");
-            Console.WriteLine(streamReader.ReadToEnd());
-            streamReader.Close();
-        }
-        catch(Exception ex)
+        static void Main(string[] args)
         {
-            Console.WriteLine(ex.Message);
-        }        
+            Console.WriteLine("Hello World!");
+        }
     }
-
 }
- 
